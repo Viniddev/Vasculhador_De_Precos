@@ -44,6 +44,7 @@ namespace ProjectTemplate.Pipes.Sydle
 
             input.driver = Driver;
             input.pathDownload = pathDownload;
+            input.product = "PlayStation®5 Slim";
 
             return input;
         }

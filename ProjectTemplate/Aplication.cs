@@ -1,4 +1,7 @@
-﻿using System;
+﻿using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -89,6 +92,19 @@ namespace ProjectTemplate
             KillChromeDriver();
 
             Environment.Exit(0);
+        }
+
+
+        public static void WaitForTitle(ChromeDriver driver)
+        {
+            try
+            {
+                new WebDriverWait(driver, TimeSpan.FromSeconds(3)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath(".//span[@data-testid='main-title']")));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Title not found");
+            }
         }
     }
 }

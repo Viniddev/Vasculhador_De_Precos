@@ -1,6 +1,7 @@
 ﻿using PipeliningLibrary;
 using ProjectTemplate.Pipes.Navegador;
 using ProjectTemplate.Pipes.Sydle;
+using ProjectTemplate.Pipes.Telegram;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,8 +26,12 @@ namespace ProjectTemplate.Pipelines
                 .Pipe<NavegarKabum>()
                 ;
             
-            Pipeline("NavegarMercadoLivre")
-                .Pipe<NavegarMercadoLivre>()
+            Pipeline("NavegarMagazineLuiza")
+                .Pipe<NavegarMagazineLuiza>()
+                ; 
+            
+            Pipeline("BuildReport")
+                .Pipe<BuildReport>()
                 ;
         }
     }
