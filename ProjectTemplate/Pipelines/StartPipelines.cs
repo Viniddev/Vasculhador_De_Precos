@@ -9,8 +9,6 @@ namespace ProjectTemplate.Pipelines
 {
     public class StartPipelines
     {
-        public static int numRelatorio { get; set; }
-
         public StartPipelines() 
         {
             ExpandoObject input = new ExpandoObject();

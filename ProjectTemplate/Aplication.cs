@@ -13,7 +13,7 @@ namespace ProjectTemplate
     internal class Aplication
     {
         public static int Contador { get; set; }
-        //contador limite de tempo 
+
         public static async Task ContadorLimiteTempo()
         {
             Task cont = Task.Run(async () =>
