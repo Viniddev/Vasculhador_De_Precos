@@ -2,45 +2,55 @@
 using OpenQA.Selenium.Chrome;
 using PipeliningLibrary;
 using ProjectTemplate.Models;
+using ProjectTemplate.Pipes.Excel;
+using System.Text.RegularExpressions;
 
 namespace ProjectTemplate.Pipes.Navegador
 {
     public class NavegarKabum : IPipe
     {
+        private ExcelGenerator excelGenerator = new ExcelGenerator();
+
         public object Run(dynamic input) 
         {
-            string product = input.product;
             ChromeDriver driver = input.driver;
             driver.Navigate().GoToUrl("https://www.kabum.com.br/");
 
-            IWebElement campoBusca = driver.FindElement(By.XPath(".//input[@id='input-busca']"));
-            campoBusca.Click();
-            campoBusca.SendKeys(product);
-            campoBusca.SendKeys(Keys.Enter);
-
-            List<IWebElement> cardsProdutos = driver.FindElements(By.XPath(".//article[contains(@class, 'productCard')]")).ToList();
-
-            Thread.Sleep(1500);
-            PriceIndicator menorPreco = MontarObjeto(cardsProdutos.ElementAt(5));
-            foreach (IWebElement element in cardsProdutos)
+            foreach(var product in input.Products)
             {
-                PriceIndicator indicator = MontarObjeto(element);
+                IWebElement campoBusca = driver.FindElement(By.XPath(".//input[@id='input-busca']"));
+                campoBusca.Click();
+                campoBusca.Clear();
+                campoBusca.SendKeys(product);
+                campoBusca.SendKeys(Keys.Enter);
+
+                List<IWebElement> cardsProdutos = driver.FindElements(By.XPath(".//article[contains(@class, 'productCard')]")).ToList();
+
+                Thread.Sleep(1500);
+                PriceIndicator menorPreco = MontarObjeto(cardsProdutos.ElementAt(5));
+                foreach (IWebElement element in cardsProdutos)
+                {
+                    PriceIndicator indicator = MontarObjeto(element);
 
 
-                if (indicator.Price < 1000 || !indicator.Title.Contains(product))
-                {
-                    continue;
+                    if (indicator.Price < 1000 || !indicator.Title.Contains(product))
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        if (indicator.Price < menorPreco.Price)
+                            menorPreco = indicator;
+                    }
                 }
-                else
-                {
-                    if (indicator.Price < menorPreco.Price)
-                        menorPreco = indicator;
-                }
+
+                menorPreco.ToString();
+                Thread.Sleep(1500);
+                input.menorPrecoKabum = menorPreco;
+
+                excelGenerator.EditXlsx(menorPreco);
             }
-
-            menorPreco.ToString();
-            input.menorPrecoKabum = menorPreco;
-            Thread.Sleep(1500);
+        
             return input;
         }
 
@@ -72,7 +82,15 @@ namespace ProjectTemplate.Pipes.Navegador
             {
                 avaliacaoProduto = indicadorDePreco.FindElement(By.XPath("//div[contains(@aria-label, 'Classificação')]")).GetAttribute("aria-label");
                 if (avaliacaoProduto == string.Empty)
+                {
                     avaliacaoProduto = "n/a";
+                }
+                else
+                {
+                    string padrao = @"\d+([.,]\d+)?";
+                    var avaliacao = Regex.Match(avaliacaoProduto, padrao);
+                    avaliacaoProduto = avaliacao.ToString();
+                }
             }
             catch (Exception ex)
             {
@@ -84,6 +102,8 @@ namespace ProjectTemplate.Pipes.Navegador
                 Title = text,
                 Price = preco,
                 Avaliation = avaliacaoProduto,
+                Store = "Kabum",
+                Date = DateTime.Today.ToString("dd/MM/yyyy"),
             };
         }
     }

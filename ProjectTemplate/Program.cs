@@ -1,5 +1,6 @@
 ﻿using ProjectTemplate;
 using ProjectTemplate.Pipelines;
+using ProjectTemplate.Pipes.Excel;
 using System;
 
 namespace program
@@ -8,6 +9,9 @@ namespace program
     {
         public static async Task Main(string[] args)
         {
+            ExcelGenerator generator = new ExcelGenerator();
+            generator.CreateXlsx();
+
             StartPipelines startPipelines = new StartPipelines();
 
 

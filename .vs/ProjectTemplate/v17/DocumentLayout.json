@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|c:\\users\\genti\\documents\\workspace\\universidade\\inovacoes\\vasculhador_de_precos\\projecttemplate\\pipes\\excel\\excelgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|solutionrelative:projecttemplate\\pipes\\excel\\excelgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|c:\\users\\genti\\documents\\workspace\\universidade\\inovacoes\\vasculhador_de_precos\\projecttemplate\\pipelines\\startpipelines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|solutionrelative:projecttemplate\\pipelines\\startpipelines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|c:\\users\\genti\\documents\\workspace\\universidade\\inovacoes\\vasculhador_de_precos\\projecttemplate\\pipelines\\pipelines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|solutionrelative:projecttemplate\\pipelines\\pipelines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|c:\\users\\genti\\documents\\workspace\\universidade\\inovacoes\\vasculhador_de_precos\\projecttemplate\\models\\priceindicator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|solutionrelative:projecttemplate\\models\\priceindicator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|c:\\users\\genti\\documents\\workspace\\universidade\\inovacoes\\vasculhador_de_precos\\projecttemplate\\pipes\\telegram\\buildreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|solutionrelative:projecttemplate\\pipes\\telegram\\buildreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|c:\\users\\genti\\documents\\workspace\\universidade\\inovacoes\\vasculhador_de_precos\\projecttemplate\\pipes\\telegram\\telegramapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|solutionrelative:projecttemplate\\pipes\\telegram\\telegramapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|c:\\users\\genti\\documents\\workspace\\universidade\\inovacoes\\vasculhador_de_precos\\projecttemplate\\pipes\\navegador\\navegaramazon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|solutionrelative:projecttemplate\\pipes\\navegador\\navegaramazon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|c:\\users\\genti\\documents\\workspace\\universidade\\inovacoes\\vasculhador_de_precos\\projecttemplate\\pipes\\navegador\\navegarmagazineluiza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|solutionrelative:projecttemplate\\pipes\\navegador\\navegarmagazineluiza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|c:\\users\\genti\\documents\\workspace\\universidade\\inovacoes\\vasculhador_de_precos\\projecttemplate\\pipes\\navegador\\navegarkabum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CCD9E7E-56A1-445D-84E3-0D708428167C}|ProjectTemplate\\ProjectTemplate.csproj|solutionrelative:projecttemplate\\pipes\\navegador\\navegarkabum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StartPipelines.cs",
+              "DocumentMoniker": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipelines\\StartPipelines.cs",
+              "RelativeDocumentMoniker": "ProjectTemplate\\Pipelines\\StartPipelines.cs",
+              "ToolTip": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipelines\\StartPipelines.cs",
+              "RelativeToolTip": "ProjectTemplate\\Pipelines\\StartPipelines.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T05:52:33.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pipelines.cs",
+              "DocumentMoniker": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipelines\\Pipelines.cs",
+              "RelativeDocumentMoniker": "ProjectTemplate\\Pipelines\\Pipelines.cs",
+              "ToolTip": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipelines\\Pipelines.cs",
+              "RelativeToolTip": "ProjectTemplate\\Pipelines\\Pipelines.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T05:52:31.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TelegramApi.cs",
+              "DocumentMoniker": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Telegram\\TelegramApi.cs",
+              "RelativeDocumentMoniker": "ProjectTemplate\\Pipes\\Telegram\\TelegramApi.cs",
+              "ToolTip": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Telegram\\TelegramApi.cs",
+              "RelativeToolTip": "ProjectTemplate\\Pipes\\Telegram\\TelegramApi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T05:36:05.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BuildReport.cs",
+              "DocumentMoniker": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Telegram\\BuildReport.cs",
+              "RelativeDocumentMoniker": "ProjectTemplate\\Pipes\\Telegram\\BuildReport.cs",
+              "ToolTip": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Telegram\\BuildReport.cs",
+              "RelativeToolTip": "ProjectTemplate\\Pipes\\Telegram\\BuildReport.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T05:35:38.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExcelGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Excel\\ExcelGenerator.cs",
+              "RelativeDocumentMoniker": "ProjectTemplate\\Pipes\\Excel\\ExcelGenerator.cs",
+              "ToolTip": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Excel\\ExcelGenerator.cs",
+              "RelativeToolTip": "ProjectTemplate\\Pipes\\Excel\\ExcelGenerator.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAowEUAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T05:26:29.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NavegarMagazineLuiza.cs",
+              "DocumentMoniker": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Navegador\\NavegarMagazineLuiza.cs",
+              "RelativeDocumentMoniker": "ProjectTemplate\\Pipes\\Navegador\\NavegarMagazineLuiza.cs",
+              "ToolTip": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Navegador\\NavegarMagazineLuiza.cs",
+              "RelativeToolTip": "ProjectTemplate\\Pipes\\Navegador\\NavegarMagazineLuiza.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwBsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T05:26:16.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NavegarKabum.cs",
+              "DocumentMoniker": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Navegador\\NavegarKabum.cs",
+              "RelativeDocumentMoniker": "ProjectTemplate\\Pipes\\Navegador\\NavegarKabum.cs",
+              "ToolTip": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Navegador\\NavegarKabum.cs",
+              "RelativeToolTip": "ProjectTemplate\\Pipes\\Navegador\\NavegarKabum.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwGIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T05:25:23.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PriceIndicator.cs",
+              "DocumentMoniker": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Models\\PriceIndicator.cs",
+              "RelativeDocumentMoniker": "ProjectTemplate\\Models\\PriceIndicator.cs",
+              "ToolTip": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Models\\PriceIndicator.cs",
+              "RelativeToolTip": "ProjectTemplate\\Models\\PriceIndicator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAB4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T05:21:44.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NavegarAmazon.cs",
+              "DocumentMoniker": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Navegador\\NavegarAmazon.cs",
+              "RelativeDocumentMoniker": "ProjectTemplate\\Pipes\\Navegador\\NavegarAmazon.cs",
+              "ToolTip": "C:\\Users\\genti\\Documents\\workspace\\universidade\\inovacoes\\Vasculhador_De_Precos\\ProjectTemplate\\Pipes\\Navegador\\NavegarAmazon.cs",
+              "RelativeToolTip": "ProjectTemplate\\Pipes\\Navegador\\NavegarAmazon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T05:17:58.715Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
