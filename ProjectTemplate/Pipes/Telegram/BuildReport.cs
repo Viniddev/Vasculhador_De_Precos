@@ -23,7 +23,7 @@ namespace ProjectTemplate.Pipes.Telegram
 
             string report = "\U0001F6A9 Indicadores Favoráveis \U0001F6A9 \n\n";
 
-            report = excelGenerator.ReadXlsxx(report);
+            report = excelGenerator.ReadXlsx(report);
 
             //report += "\u2705 Melhor indicativo Amazon: \n" + indicadorAmazon.ToString() + "\n";
             //report += "\u2705 Melhor indicativo Kabum: \n" + indicadorKabum.ToString() + "\n";

@@ -58,7 +58,7 @@ namespace ProjectTemplate.Pipes.Excel
             }        
         }
 
-        public string ReadXlsxx(string report)
+        public string ReadXlsx(string report)
         {
             using (var workbook = new XLWorkbook(arquivo))
             {
