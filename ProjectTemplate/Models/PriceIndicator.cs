@@ -13,12 +13,13 @@ namespace ProjectTemplate.Models
         public string Avaliation { get; set; }
         public string Store { get; set; }
         public string Date {  get; set; }
+        public string SearchText { get; set; }
 
 
         public string ToString() 
         {
-            Console.WriteLine($"•Title: {Title} \n•Price: {Price} \n•Avaliation: {Avaliation} \n•Store: {Store} \n•Date: {Date} \n\n");
-            return $"•Title: {Title} \n•Price: {Price} \n•Avaliation: {Avaliation} \n•Store: {Store} \n•Date: {Date} \n ";
+            Console.WriteLine($"•Title: {Title} \n•Price: {Price} \n•Avaliation: {Avaliation} \n•Store: {Store} \n•Date: {Date} \n•SearchText: {SearchText}\n");
+            return $"•Title: {Title} \n•Price: {Price} \n•Avaliation: {Avaliation} \n•Store: {Store} \n•Date: {Date} \n•SearchText: {SearchText} \n";
         }
     }
 }

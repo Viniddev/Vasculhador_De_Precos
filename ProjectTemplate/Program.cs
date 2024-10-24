@@ -10,7 +10,8 @@ namespace program
         public static async Task Main(string[] args)
         {
             ExcelGenerator generator = new ExcelGenerator();
-            generator.CreateXlsx();
+            generator.CreateXlsx("Vasculhador_de_Precos.xlsx");
+            generator.CreateXlsx("Telegram_Report.xlsx");
 
             StartPipelines startPipelines = new StartPipelines();
 

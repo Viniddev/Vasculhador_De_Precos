@@ -29,13 +29,16 @@ namespace ProjectTemplate.Pipes.Navegador
                 campoBusca.SendKeys(product);
                 campoBusca.SendKeys(Keys.Enter);
 
-                Thread.Sleep(1000);
-                List<IWebElement> listaDivPrecos = driver.FindElements(By.XPath(".//div[@data-testid='product-card-content']")).ToList();
 
-                PriceIndicator menorPreco = MontarObjeto(listaDivPrecos.ElementAt(4));
+                Thread.Sleep(1500);
+                List<IWebElement> listaDivPrecos = driver.FindElements(By.XPath(".//div[@data-testid='product-card-content']")).ToList();
+                Thread.Sleep(1500);
+
+                PriceIndicator menorPreco = MontarObjeto(listaDivPrecos.ElementAt(4), product.ToString());
                 foreach (IWebElement element in listaDivPrecos)
                 {
-                    PriceIndicator indicator = MontarObjeto(element);
+                    PriceIndicator indicator = MontarObjeto(element, product.ToString());
+                    excelGenerator.EditXlsx(indicator, "Vasculhador_de_Precos.xlsx");
 
                     if (indicator.Price < 1000 || !indicator.Title.Contains(product))
                     {
@@ -51,14 +54,13 @@ namespace ProjectTemplate.Pipes.Navegador
                 menorPreco.ToString();
                 input.menorPrecoMagazine = menorPreco;
                 Thread.Sleep(1500);
-
-                excelGenerator.EditXlsx(menorPreco);
+                excelGenerator.EditXlsx(menorPreco, "Telegram_Report.xlsx");
             }           
 
             return input;
         }
 
-        private PriceIndicator MontarObjeto(IWebElement indicadorDePreco)
+        private PriceIndicator MontarObjeto(IWebElement indicadorDePreco, string produto)
         {
             string text = string.Empty;
             try
@@ -107,6 +109,7 @@ namespace ProjectTemplate.Pipes.Navegador
                 Avaliation = avaliacaoProduto,
                 Store = "Magazine Luiza",
                 Date = DateTime.Today.ToString("dd/MM/yyyy"),
+                SearchText = produto
             };
         }
     }

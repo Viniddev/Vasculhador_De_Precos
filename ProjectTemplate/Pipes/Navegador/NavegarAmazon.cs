@@ -30,15 +30,15 @@ namespace ProjectTemplate.Pipes.Sydle
                 campoBusca.SendKeys(product);
                 campoBusca.SendKeys(Keys.Enter);
 
-
+                Thread.Sleep(1500);
                 List<IWebElement> listaDivPrecos = driver.FindElements(By.XPath(".//*[contains(@class, 'a-spacing-small puis-padding-left-small')]")).ToList();
 
 
-                PriceIndicator menorPreco = MontarObjeto(listaDivPrecos.FirstOrDefault());
+                PriceIndicator menorPreco = MontarObjeto(listaDivPrecos.FirstOrDefault(), product.ToString());
                 foreach (IWebElement element in listaDivPrecos)
                 {
-                    PriceIndicator indicator = MontarObjeto(element);
-
+                    PriceIndicator indicator = MontarObjeto(element, product.ToString());
+                    excelGenerator.EditXlsx(indicator, "Vasculhador_de_Precos.xlsx");
 
                     if (indicator.Price < 1000)
                     {
@@ -56,14 +56,12 @@ namespace ProjectTemplate.Pipes.Sydle
                 menorPreco.ToString();
                 Thread.Sleep(1500);
                 input.menorPrecoAmazon = menorPreco;
-
-                excelGenerator.EditXlsx(menorPreco);
-
+                excelGenerator.EditXlsx(menorPreco, "Telegram_Report.xlsx");
             }
             return input;
         }
 
-        private PriceIndicator MontarObjeto(IWebElement indicadorDePreco) 
+        private PriceIndicator MontarObjeto(IWebElement indicadorDePreco, string produto) 
         {
             string text = indicadorDePreco.FindElement(By.XPath(".//*[contains(@class,'a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal')]")).Text;
             decimal preco = 0;
@@ -95,13 +93,14 @@ namespace ProjectTemplate.Pipes.Sydle
                 avaliacaoProduto = "n/a";
             }
 
-            return new PriceIndicator() 
+            return new PriceIndicator()
             {
                 Title = text,
                 Price = preco,
                 Avaliation = avaliacaoProduto,
                 Store = "Amazon",
                 Date = DateTime.Today.ToString("dd/MM/yyyy"),
+                SearchText = produto,
             };
         }
     }

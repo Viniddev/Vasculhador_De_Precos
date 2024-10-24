@@ -15,9 +15,7 @@ namespace ProjectTemplate.Pipes.Excel
 {
     public class ExcelGenerator
     {
-        private string arquivo = "Vasculhador_de_Precos.xlsx";
-
-        public void CreateXlsx()
+        public void CreateXlsx(string arquivo)
         {
             bool arquivoExiste = File.Exists(arquivo);
             if(!arquivoExiste)
@@ -32,6 +30,7 @@ namespace ProjectTemplate.Pipes.Excel
                     worksheet.Cell(1, 3).Value = "Review";
                     worksheet.Cell(1, 4).Value = "Store";
                     worksheet.Cell(1, 5).Value = "Date";
+                    worksheet.Cell(1, 6).Value = "SearchText";
 
                     workbook.SaveAs(arquivo);
                 }
@@ -39,7 +38,7 @@ namespace ProjectTemplate.Pipes.Excel
             }
         }
 
-        public void EditXlsx(PriceIndicator priceIndicator)
+        public void EditXlsx(PriceIndicator priceIndicator, string arquivo)
         {
             using (var workbook = new XLWorkbook(arquivo))
             {
@@ -53,12 +52,13 @@ namespace ProjectTemplate.Pipes.Excel
                 worksheet.Cell(proximaLinha, 3).Value = priceIndicator.Avaliation;
                 worksheet.Cell(proximaLinha, 4).Value = priceIndicator.Store;
                 worksheet.Cell(proximaLinha, 5).Value = priceIndicator.Date;
+                worksheet.Cell(proximaLinha, 6).Value = priceIndicator.SearchText;
 
                 workbook.SaveAs(arquivo);
             }        
         }
 
-        public string ReadXlsx(string report)
+        public string ReadXlsx(string report, string arquivo)
         {
             using (var workbook = new XLWorkbook(arquivo))
             {

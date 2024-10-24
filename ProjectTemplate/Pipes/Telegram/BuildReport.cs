@@ -17,13 +17,13 @@ namespace ProjectTemplate.Pipes.Telegram
         public object Run(dynamic input) 
         {
 
-            PriceIndicator indicadorAmazon = input.menorPrecoAmazon;
-            PriceIndicator indicadorMagazine = input.menorPrecoMagazine;
-            PriceIndicator indicadorKabum = input.menorPrecoKabum;
+            //PriceIndicator indicadorAmazon = input.menorPrecoAmazon;
+            //PriceIndicator indicadorMagazine = input.menorPrecoMagazine;
+            //PriceIndicator indicadorKabum = input.menorPrecoKabum;
 
             string report = "\U0001F6A9 Indicadores Favoráveis \U0001F6A9 \n\n";
 
-            report = excelGenerator.ReadXlsx(report);
+            report = excelGenerator.ReadXlsx(report, "Telegram_Report.xlsx");
 
             //report += "\u2705 Melhor indicativo Amazon: \n" + indicadorAmazon.ToString() + "\n";
             //report += "\u2705 Melhor indicativo Kabum: \n" + indicadorKabum.ToString() + "\n";

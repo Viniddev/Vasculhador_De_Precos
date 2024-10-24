@@ -44,7 +44,8 @@ namespace ProjectTemplate.Pipes.Sydle
 
             input.driver = Driver;
             input.pathDownload = pathDownload;
-            input.Products = new List<string>() { "PlayStation®5 Slim", "Placa de Vídeo RTX 3060", "Ryzen 5 7600", "Placa Mãe AsRock B650" };
+            input.Products = new List<string>() { "Placa de Vídeo RTX 3060", "Processador Ryzen 5 7600 AM5", "Placa Mãe AsRock B650 AM5" , "Placa de Vídeo GTX 1060", 
+                "Processador Ryzen 3 3200G", "Memória RAM 8 GB", "Memória RAM 16 GB", "SSD M.2 NVMe 1TB", "SSD sata 1TB", "Placa de vídeo AMD radeon RX 7900"};
 
             return input;
         }

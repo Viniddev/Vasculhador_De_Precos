@@ -24,14 +24,16 @@ namespace ProjectTemplate.Pipes.Navegador
                 campoBusca.SendKeys(product);
                 campoBusca.SendKeys(Keys.Enter);
 
-                List<IWebElement> cardsProdutos = driver.FindElements(By.XPath(".//article[contains(@class, 'productCard')]")).ToList();
-
                 Thread.Sleep(1500);
-                PriceIndicator menorPreco = MontarObjeto(cardsProdutos.ElementAt(5));
+                List<IWebElement> cardsProdutos = driver.FindElements(By.XPath(".//article[contains(@class, 'productCard')]")).ToList();
+                Thread.Sleep(1500);
+
+
+                PriceIndicator menorPreco = MontarObjeto(cardsProdutos.ElementAt(5), product.ToString());
                 foreach (IWebElement element in cardsProdutos)
                 {
-                    PriceIndicator indicator = MontarObjeto(element);
-
+                    PriceIndicator indicator = MontarObjeto(element, product.ToString());
+                    excelGenerator.EditXlsx(indicator, "Vasculhador_de_Precos.xlsx");
 
                     if (indicator.Price < 1000 || !indicator.Title.Contains(product))
                     {
@@ -47,15 +49,14 @@ namespace ProjectTemplate.Pipes.Navegador
                 menorPreco.ToString();
                 Thread.Sleep(1500);
                 input.menorPrecoKabum = menorPreco;
-
-                excelGenerator.EditXlsx(menorPreco);
+                excelGenerator.EditXlsx(menorPreco, "Telegram_Report.xlsx");
             }
         
             return input;
         }
 
 
-        private PriceIndicator MontarObjeto(IWebElement indicadorDePreco)
+        private PriceIndicator MontarObjeto(IWebElement indicadorDePreco, string produto)
         {
             string text = string.Empty;
             try
@@ -104,6 +105,7 @@ namespace ProjectTemplate.Pipes.Navegador
                 Avaliation = avaliacaoProduto,
                 Store = "Kabum",
                 Date = DateTime.Today.ToString("dd/MM/yyyy"),
+                SearchText = produto,
             };
         }
     }
