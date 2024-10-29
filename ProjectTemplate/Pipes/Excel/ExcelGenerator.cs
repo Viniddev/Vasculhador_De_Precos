@@ -1,15 +1,5 @@
-﻿using AngleSharp.Html.Dom;
-using ClosedXML.Excel;
-using Microsoft.Extensions.Configuration;
-using PipeliningLibrary;
+﻿using ClosedXML.Excel;
 using ProjectTemplate.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProjectTemplate.Pipes.Excel
 {
@@ -20,7 +10,6 @@ namespace ProjectTemplate.Pipes.Excel
             bool arquivoExiste = File.Exists(arquivo);
             if(!arquivoExiste)
             {
-                Console.WriteLine("Entrei no criador.");
                 using (var workbook = new XLWorkbook())
                 {
                     var worksheet = workbook.AddWorksheet("Vasculhador_de_Precos");

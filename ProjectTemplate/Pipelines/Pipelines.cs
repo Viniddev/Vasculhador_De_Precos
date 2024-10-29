@@ -26,6 +26,10 @@ namespace ProjectTemplate.Pipelines
             Pipeline("NavegarKabum")
                 .Pipe<NavegarKabum>()
                 ;
+
+            Pipeline("NavegadorMercadoLivre")
+                .Pipe<NavegadorMercadoLivre>()
+                ;
             
             Pipeline("NavegarMagazineLuiza")
                 .Pipe<NavegarMagazineLuiza>()
