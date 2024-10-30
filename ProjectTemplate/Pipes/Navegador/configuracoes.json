@@ -1,0 +1,38 @@
+[
+  {
+    "Nome": "Mercado Livre",
+    "Site": "https://www.mercadolivre.com.br/",
+    "Busca": "//input[@class='nav-search-input']",
+    "ListProdutos": "//div[@class='ui-search-result__content']",
+    "TituloProduto": ".//*[contains(@class, 'ui-search-link__title-card ui-search-link')]",
+    "PrecoProduto": ".//*[contains(@class,'andes-money-amount__fraction')]",
+    "AvaliacaoProduto": "//span[contains(@class, 'ui-search-reviews__rating-number')]"
+  },
+  {
+    "Nome": "Amazon",
+    "Site": "https://www.amazon.com.br/",
+    "Busca": ".//input[@id='twotabsearchtextbox']",
+    "ListProdutos": ".//*[contains(@class, 'a-spacing-small puis-padding-left-small')]",
+    "TituloProduto": ".//*[contains(@class,'a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal')]",
+    "PrecoProduto": ".//*[contains(@class,'a-price-whole')]",
+    "AvaliacaoProduto": "//span[contains(@aria-label, 'estrelas')]"
+  },
+  {
+    "Nome": "Kabum",
+    "Site": "https://www.kabum.com.br/",
+    "Busca": ".//input[@id='input-busca']",
+    "ListProdutos": ".//article[contains(@class, 'productCard')]",
+    "TituloProduto": ".//span[contains(@class, 'nameCard')]",
+    "PrecoProduto": ".//span[contains(@class,'priceCard')]",
+    "AvaliacaoProduto": ".//div[contains(@aria-label, 'estrelas')]"
+  },
+  {
+    "Nome": "Magazine Luiza",
+    "Site": "https://www.magazineluiza.com.br",
+    "Busca": ".//input[@id='input-search']",
+    "ListProdutos": ".//div[@data-testid='product-card-content']",
+    "TituloProduto": ".//h2[@data-testid='product-title']",
+    "PrecoProduto": ".//p[@data-testid='price-value']",
+    "AvaliacaoProduto": ".//span[@format='score-count']"
+  }
+]

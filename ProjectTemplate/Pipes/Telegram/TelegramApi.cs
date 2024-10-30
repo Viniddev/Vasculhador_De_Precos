@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
+using File = System.IO.File;
 
 namespace ProjectTemplate.Pipes.Telegram
 {
@@ -51,6 +52,17 @@ namespace ProjectTemplate.Pipes.Telegram
         public static async Task SendLogText(string message, string tipo)
         {
             var filePath = $@"{AppDomain.CurrentDomain.BaseDirectory}LogTxt\Relatorio.txt";
+
+            var directory = Path.GetDirectoryName(filePath);
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            if (!File.Exists(filePath))
+            {
+                File.Create(filePath).Dispose();
+            }
 
             using (StreamWriter writer = new StreamWriter(filePath, false))
             {

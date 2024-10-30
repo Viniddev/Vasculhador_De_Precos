@@ -55,8 +55,11 @@ namespace ProjectTemplate.Pipes.Excel
 
                 foreach(var line in worksheet.RowsUsed().Skip(1))
                 {
-                    report += $"\u2705 Melhor indicativo {line.Cell(4).Value}: \n •Título: {line.Cell(1).Value} \n•Preço: R${line.Cell(2).Value} \n" +
-                        $"•Avaliação: {line.Cell(3).Value} \n•Data: {line.Cell(5).Value} \n\n";
+                    report += $"\u2705 Melhor indicativo {line.Cell(4).Value}: \n " +
+                        $"•Título: {line.Cell(1).Value} \n" +
+                        $"•Preço: R${line.Cell(2).Value} \n" +
+                        $"•Avaliação: {line.Cell(3).Value} \n" +
+                        $"•Data: {line.Cell(5).Value} \n\n";
                 }
 
                 return report;

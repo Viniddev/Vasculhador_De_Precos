@@ -21,10 +21,13 @@ namespace ProjectTemplate.Pipelines
                 try 
                 {
                     pipeline["IniciarNavegador"].Run(input);
-                    pipeline["NavegarAmazon"].Run(input);
-                    pipeline["NavegarKabum"].Run(input);
-                    pipeline["NavegadorMercadoLivre"].Run(input);
-                    pipeline["NavegarMagazineLuiza"].Run(input);
+
+                    //pipeline["NavegarAmazon"].Run(input);
+                    //pipeline["NavegarKabum"].Run(input);
+                    //pipeline["NavegadorMercadoLivre"].Run(input);
+                    //pipeline["NavegarMagazineLuiza"].Run(input);
+
+                    pipeline["NavegadorAutomatico"].Run(input);
                     pipeline["BuildReport"].Run(input);
 
                     Aplication.KillChromeDriver();

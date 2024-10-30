@@ -1,6 +1,5 @@
 ﻿using PipeliningLibrary;
 using ProjectTemplate.Pipes.Excel;
-using ProjectTemplate.Pipes.Navegador;
 using ProjectTemplate.Pipes.Sydle;
 using ProjectTemplate.Pipes.Telegram;
 using System;
@@ -19,20 +18,8 @@ namespace ProjectTemplate.Pipelines
                 .Pipe<IniciarNavegador>()
                 ;
 
-            Pipeline("NavegarAmazon")
-                .Pipe<NavegarAmazon>()
-                ;     
-            
-            Pipeline("NavegarKabum")
-                .Pipe<NavegarKabum>()
-                ;
-
-            Pipeline("NavegadorMercadoLivre")
-                .Pipe<NavegadorMercadoLivre>()
-                ;
-            
-            Pipeline("NavegarMagazineLuiza")
-                .Pipe<NavegarMagazineLuiza>()
+            Pipeline("NavegadorAutomatico")
+                .Pipe<NavegadorAutomatico>()
                 ;
             
             Pipeline("BuildReport")
